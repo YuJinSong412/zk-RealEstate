@@ -9,7 +9,7 @@ GMP : /opt/homebrew/Cellar/gmp/6.2.1_1
 OMP : /opt/homebrew/Cellar/libomp/15.0.7
 OPENJDK : /opt/homebrew/Cellar/openjdk@11/11.0.18
 
-source /Users/mangoo/Documents/libsnark-optimization/test/../build_workspace/test/../darwin_path.info ; \
+source /Users/song-yujin/zk_RealEstate/libsnark-optimization/test/../build_workspace/test/../darwin_path.info ; \
  clang++ -Wall -Wextra -Wfatal-errors -stdlib=libc++ -std=c++11 -O2 -g \
  test.cpp \
  -I../ -I../depends/CircuitBuilder -I../depends/json_tree -I${GMP}/include -I${OpenSSL}/include -I${OMP}/include -I${OpenJDK}/include \
@@ -17,10 +17,10 @@ source /Users/mangoo/Documents/libsnark-optimization/test/../build_workspace/tes
  ../lib/darwin_debug/lib/libSnark.a \
  -L${OpenSSL}/lib -L${GMP}/lib -L${OMP}/lib \
  -lgmp -lgmpxx -lssl -lcrypto -lc++ -lomp -ldl -lpthread \
- -o /Users/mangoo/Documents/libsnark-optimization/test/../build_workspace/test/test.debug
+ -o /Users/song-yujin/zk_RealEstate/libsnark-optimization/test/../build_workspace/test/test.debug
 ld: warning: dylib (/opt/homebrew/Cellar/libomp/15.0.7/lib/libomp.dylib) was built for newer macOS version (13.0) than being linked (12.3)
 
-/Users/mangoo/Documents/libsnark-optimization/test/../build_workspace/test/test.debug RealEstate 32
+/Users/song-yujin/zk_RealEstate/libsnark-optimization/test/../build_workspace/test/test.debug RealEstate 32
 
 Embedded Circuits :
 DID
@@ -143,7 +143,7 @@ _ G2 window: 11
 (leave) Call to r1cs_gg_ppzksnark_generator [0.5722s x4.49] (0.5722s x4.49 from start)
 (leave) Setup [0.5722s x4.49] (0.5723s x4.49 from start)
 Write Constraint System to File
-File : [/Users/mangoo/Documents/libsnark-optimization/test/RealEstate_constraint_system.dat]
+File : [/Users/song-yujin/zk_RealEstate/libsnark-optimization/test/RealEstate_constraint_system.dat]
 ---- File Info ----
 {
 "Auxiliary Input Size" : 17867 ,
@@ -163,10 +163,10 @@ File : [/Users/mangoo/Documents/libsnark-optimization/test/RealEstate_constraint
 
 End of Writing Constraint System to file
 Write Proof Key to file
-File : [/Users/mangoo/Documents/libsnark-optimization/test/RealEstate_crs_pk.dat]
+File : [/Users/song-yujin/zk_RealEstate/libsnark-optimization/test/RealEstate_crs_pk.dat]
 End of Writing Proof Key to file
 Write Verify Key to file
-File : [/Users/mangoo/Documents/libsnark-optimization/test/RealEstate_crs_vk.dat]
+File : [/Users/song-yujin/zk_RealEstate/libsnark-optimization/test/RealEstate_crs_vk.dat]
 End of Writing Verify Key to file
 <<<< Verify Key Json >>>>
 {
@@ -319,10 +319,10 @@ finalize_circuit arguments :
 context_id : 1
 Deallocate 43760 Operators , 46093 Wires
 
-<<<< 2 , success : using embedded [RealEstate] circuit generator with cs file [/Users/mangoo/Documents/libsnark-optimization/test/RealEstate_constraint_system.dat] >>>>
+<<<< 2 , success : using embedded [RealEstate] circuit generator with cs file [/Users/song-yujin/zk_RealEstate/libsnark-optimization/test/RealEstate_constraint_system.dat] >>>>
 
 Verify Constraint System File Checksum
-File : [/Users/mangoo/Documents/libsnark-optimization/test/RealEstate_constraint_system.dat]
+File : [/Users/song-yujin/zk_RealEstate/libsnark-optimization/test/RealEstate_constraint_system.dat]
 ---- File Info ----
 {
 "Auxiliary Input Size" : 17867 ,
@@ -385,7 +385,7 @@ Build Circuit Profiling Info :
 (leave) Get ConstraintSystem from Gadgetlib2 [0.2955s x1.00] (2.2432s x1.00 from start)
 (leave) Build Circuit [2.2432s x1.00] (2.2432s x1.00 from start)
 Read Proof Key from file
-File : [/Users/mangoo/Documents/libsnark-optimization/test/RealEstate_crs_pk.dat]
+File : [/Users/song-yujin/zk_RealEstate/libsnark-optimization/test/RealEstate_crs_pk.dat]
 
 - G1 elements in PK: 70033
 - Non-zero G1 elements in PK: 64404
@@ -571,7 +571,7 @@ Build Circuit Profiling Info :
 (leave) Get ConstraintSystem from Gadgetlib2 [0.2985s x1.00] (2.2379s x1.00 from start)
 (leave) Build Circuit [2.2379s x1.00] (2.2379s x1.00 from start)
 Read Proof Key from file
-File : [/Users/mangoo/Documents/libsnark-optimization/test/RealEstate_crs_pk.dat]
+File : [/Users/song-yujin/zk_RealEstate/libsnark-optimization/test/RealEstate_crs_pk.dat]
 
 - G1 elements in PK: 70033
 - Non-zero G1 elements in PK: 64404

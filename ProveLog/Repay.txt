@@ -11,7 +11,7 @@ Installation directories :
         OPENJDK  : /opt/homebrew/Cellar/openjdk@11/11.0.18
 
 
-source /Users/mangoo/Documents/LibSNARK_C-/test/../build_workspace/test/../darwin_path.info ; \
+source /Users/song-yujin/zk_RealEstate/LibSNARK_C-/test/../build_workspace/test/../darwin_path.info ; \
         clang++ -Wall -Wextra -Wfatal-errors -stdlib=libc++ -std=c++11  -O2 -g  \
         test.cpp  \
         -I../ -I../depends/CircuitBuilder  -I../depends/json_tree -I${GMP}/include -I${OpenSSL}/include -I${OMP}/include -I${OpenJDK}/include \
@@ -19,10 +19,10 @@ source /Users/mangoo/Documents/LibSNARK_C-/test/../build_workspace/test/../darwi
         ../lib/darwin_debug/lib/libSnark.a  \
         -L${OpenSSL}/lib -L${GMP}/lib -L${OMP}/lib \
         -lgmp -lgmpxx -lssl -lcrypto  -lc++ -lomp -ldl -lpthread \
-        -o /Users/mangoo/Documents/LibSNARK_C-/test/../build_workspace/test/test.debug
+        -o /Users/song-yujin/zk_RealEstate/LibSNARK_C-/test/../build_workspace/test/test.debug
 ld: warning: dylib (/opt/homebrew/Cellar/libomp/15.0.7/lib/libomp.dylib) was built for newer macOS version (13.0) than being linked (12.3)
 
-/Users/mangoo/Documents/LibSNARK_C-/test/../build_workspace/test/test.debug RealEstate 32
+/Users/song-yujin/zk_RealEstate/LibSNARK_C-/test/../build_workspace/test/test.debug RealEstate 32
 
 
  Embedded Circuits :
@@ -191,7 +191,7 @@ Run Setup Profiling Info :
   (leave) Call to r1cs_gg_ppzksnark_generator   [0.5444s x4.04] (0.5445s x4.04 from start)
 (leave) Setup                                   [0.5445s x4.04] (0.5445s x4.04 from start)
 Write Constraint System to File
-  File : [/Users/mangoo/Documents/LibSNARK_C-/test/RealEstate_constraint_system.dat]
+  File : [/Users/song-yujin/zk_RealEstate/LibSNARK_C-/test/RealEstate_constraint_system.dat]
 ---- File Info ----
 {
    "Auxiliary Input Size"         : 14232 , 
@@ -209,10 +209,10 @@ Write Constraint System to File
 -------------------
 End of Writing Constraint System to file
 Write Proof Key to file
-  File : [/Users/mangoo/Documents/LibSNARK_C-/test/RealEstate_crs_pk.dat]
+  File : [/Users/song-yujin/zk_RealEstate/LibSNARK_C-/test/RealEstate_crs_pk.dat]
 End of Writing Proof Key to file
 Write Verify Key to file
-  File : [/Users/mangoo/Documents/LibSNARK_C-/test/RealEstate_crs_vk.dat]
+  File : [/Users/song-yujin/zk_RealEstate/LibSNARK_C-/test/RealEstate_crs_vk.dat]
 End of Writing Verify Key to file
 <<<<  Verify Key Json  >>>>
 {
@@ -345,10 +345,10 @@ finalize_circuit arguments :
 context_id                 : 1
 Deallocate 32674 Operators , 34244 Wires 
 
-  <<<< 2 , success : using embedded [RealEstate] circuit generator with cs file [/Users/mangoo/Documents/LibSNARK_C-/test/RealEstate_constraint_system.dat] >>>> 
+  <<<< 2 , success : using embedded [RealEstate] circuit generator with cs file [/Users/song-yujin/zk_RealEstate/LibSNARK_C-/test/RealEstate_constraint_system.dat] >>>> 
 
 Verify Constraint System File Checksum
-  File : [/Users/mangoo/Documents/LibSNARK_C-/test/RealEstate_constraint_system.dat]
+  File : [/Users/song-yujin/zk_RealEstate/LibSNARK_C-/test/RealEstate_constraint_system.dat]
   ---- File Info ----
 {
    "Auxiliary Input Size"         : 14232 , 
@@ -453,7 +453,7 @@ Build Circuit Profiling Info :
   (leave) Get ConstraintSystem from Gadgetlib2  [0.2044s x1.00] (1.5239s x1.00 from start)
 (leave) Build Circuit                           [1.5239s x1.00] (1.5239s x1.00 from start)
 Read Proof Key from file
-  File : [/Users/mangoo/Documents/LibSNARK_C-/test/RealEstate_crs_pk.dat]
+  File : [/Users/song-yujin/zk_RealEstate/LibSNARK_C-/test/RealEstate_crs_pk.dat]
   
 * G1 elements in PK: 59120
 * Non-zero G1 elements in PK: 54784
@@ -784,7 +784,7 @@ Build Circuit Profiling Info :
   (leave) Get ConstraintSystem from Gadgetlib2  [0.2036s x1.00] (1.5269s x1.00 from start)
 (leave) Build Circuit                           [1.5269s x1.00] (1.5269s x1.00 from start)
 Read Proof Key from file
-  File : [/Users/mangoo/Documents/LibSNARK_C-/test/RealEstate_crs_pk.dat]
+  File : [/Users/song-yujin/zk_RealEstate/LibSNARK_C-/test/RealEstate_crs_pk.dat]
   
 * G1 elements in PK: 59120
 * Non-zero G1 elements in PK: 54784
